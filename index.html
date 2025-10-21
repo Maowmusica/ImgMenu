@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Loader</title>
+<script>
+const params = new URLSearchParams(window.location.search);
+const image = params.get("image");
+if (image) {
+  // Redirect to the corresponding PNG file
+  window.location.replace(`${image}.png`);
+} else {
+  document.write("<h2 style='font-family:sans-serif;text-align:center;margin-top:50px;'>Image Loader Active ✅</h2>");
+}
+</script>
+</head>
+<body>
+</body>
+</html>
